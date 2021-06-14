@@ -1,0 +1,14 @@
+<%= form_for(task) do |form| %>
+  <div class="field">
+    <%= form.label :name, '名字' %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :content, '內容' %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= form.submit %>
+  </div>
+<% end %>
